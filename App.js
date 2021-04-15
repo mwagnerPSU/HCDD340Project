@@ -6,6 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>caddy home screen. lets go boys</Text>
+      <Text>I made my branch </Text>
       <StatusBar style="auto" />
     </View>
   );
