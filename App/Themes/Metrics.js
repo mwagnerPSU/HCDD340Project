@@ -32,4 +32,4 @@ const metrics = {
   }
 }
 
-export default metrics
+export default metrics;
