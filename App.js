@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import ChatBotScreen from './App/Screens/ChatBotScreen';
 import HomeScreen from './App/Screens/HomeScreen';
 import HelpScreen from './App/Screens/HelpScreen';
-//import Logo from './App/Components/Logo';
+import Logo from './App/Components/Logo';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { navigationRef } from './App/Navigation/Navigator';
@@ -39,13 +39,13 @@ function Home(){
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
 
-          if (route.name === 'HelpScrn') {
+          if (route.name === 'Help') {
             iconName = focused
               ? 'information-circle-outline'
               : 'information-circle';
-          } else if (route.name === 'HomeScrn') {
+          } else if (route.name === 'Home') {
             iconName = focused ? 'home-outline' : 'home';
-          } else if (route.name === 'ChatBotScrn') {
+          } else if (route.name === 'ChatBot') {
             iconName = focused ? 'chatbubble-ellipses-outline' : 'chatbubble-ellipses';
           }
 
@@ -59,15 +59,15 @@ function Home(){
       }}
     >
       <Tab.Screen
-        name="HelpScrn"
+        name="Help"
         component={HelpScrn}
       />
       <Tab.Screen
-        name="HomeScrn" 
+        name="Home" 
         component={HomeScrn}
       />
       <Tab.Screen 
-        name="ChatBotScrn"
+        name="ChatBot"
         component={ChatBotScrn}
       />
     </Tab.Navigator>
@@ -80,9 +80,9 @@ function App() {
       <Stack.Navigator 
         initialRouteName="Home"
         screenOptions={{ 
-          title: "Caddy",
+          title: <Logo />,
           headerStyle: {
-            backgroundColor: '#BDD2B6',
+            backgroundColor: 'white',
           }
         }}
       >
