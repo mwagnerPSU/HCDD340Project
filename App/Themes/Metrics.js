@@ -1,4 +1,5 @@
 import {Dimensions, Platform} from 'react-native'
+// taken from assignment 3 
 
 const { width, height } = Dimensions.get('window')
 
