@@ -56,6 +56,14 @@ function Home(){
       tabBarOptions={{
         activeTintColor: '#637461',
         inactiveTintColor: 'gray',
+        labelStyle: {
+          fontSize: 14,
+        },
+        style :{
+          backgroundColor: 'white',
+          borderTopWidth: .75,
+          paddingTop: 10, 
+        }
       }}
     >
       <Tab.Screen
@@ -100,7 +108,7 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF7EF',
+    backgroundColor: '#EBF5E8',
     alignItems: 'center',
     justifyContent: 'center',
   },
