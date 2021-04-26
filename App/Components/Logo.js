@@ -4,11 +4,11 @@ import {View, Image, StyleSheet, Text} from 'react-native';
 export default function Search(props) {
     return(
         <View style={styles.logoArea} >
+            <Text style={styles.title}>Caddy</Text>
             <Image
             source={require('../Images/Caddy.jpg')}
             style={styles.logo}
             />
-            <Text style={styles.title}>Caddy</Text>
         </View>
     );
 
@@ -20,18 +20,11 @@ logoArea: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    ...Platform.select({
-    android: {
-        marginLeft: 40,
-    },
-    ios: {
-        marginLeft: 40,
-    },
-    }),
+    justifyContent: 'space-between',
+    paddingLeft: 20,
 },
 logo:{
-    width: '40%',
+    width: '50%',
     height: '100%',
     resizeMode: 'contain',
 },

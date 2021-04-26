@@ -62,7 +62,7 @@ function Home(){
         style :{
           backgroundColor: 'white',
           borderTopWidth: .75,
-          paddingTop: 10, 
+          paddingTop: 5, 
         }
       }}
     >
