@@ -54,7 +54,7 @@ function Home(){
         },
       })}
       tabBarOptions={{
-        activeTintColor: 'green',
+        activeTintColor: '#637461',
         inactiveTintColor: 'gray',
       }}
     >
@@ -79,7 +79,12 @@ function App() {
     <NavigationContainer ref={navigationRef}>
       <Stack.Navigator 
         initialRouteName="Home"
-        screenOptions={{ title: "Caddy" }}
+        screenOptions={{ 
+          title: "Caddy",
+          headerStyle: {
+            backgroundColor: '#BDD2B6',
+          }
+        }}
       >
         <Stack.Screen 
           name="Home" 
