@@ -5,8 +5,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>caddy home screen. lets go boys</Text>
-      <Text>I made my branch </Text>
+      <Text>it works :D</Text>
+  
       <StatusBar style="auto" />
     </View>
   );
@@ -15,7 +15,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFF7EF',
     alignItems: 'center',
     justifyContent: 'center',
   },
