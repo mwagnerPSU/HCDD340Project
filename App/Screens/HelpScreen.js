@@ -10,21 +10,21 @@ export default function App() {
             name: 'Suntra Modern Recovery ',
             location: 'New York, New York',
             phone: '886-292-1021',
-            about: 'Recovery is personal to us. As patients and as providers we’ve been there, done that, and seen that. Our personal journeys inform our mission and help us ground the work we do every day.',
+            about: 'About: Recovery is personal to us. As patients and as providers we’ve been there, done that, and seen that. Our personal journeys inform our mission and help us ground the work we do every day.',
             image: require('../Images/suntra.jpg')
         },
         {
             name: 'Riverwalk Ranch',
             location: 'Mansfield, Texas',
             phone: '817-720-9520',
-            about: 'Our Mission is to foster and facilitate substance use disorder treatment by using measurable assessments and outcomes, establishing individualized goals, and implementing proven strategies that promote long-term recovery',
+            about: 'About: Our Mission is to foster and facilitate substance use disorder treatment by using measurable assessments and outcomes, establishing individualized goals, and implementing proven strategies that promote long-term recovery',
             image: require('../Images/riverwalk.jpg')
         },
         {
             name: 'Laguna View Detox',
             location: 'Laguna Beach, California',
             phone: '888-448-1884',
-            about: 'At Laguna View Detox, we understand addiction and know how to help you break free from drug and alcohol abuse once and for all. Addiction is different for every client that comes through our doors which is why we use individualized plans for each and every person',
+            about: 'About: At Laguna View Detox, we understand addiction and know how to help you break free from drug and alcohol abuse once and for all. Addiction is different for every client that comes through our doors which is why we use individualized plans for each and every person',
             image: require('../Images/laguna.jpg')
         },
     ];
