@@ -38,13 +38,13 @@ export default function App() {
                 {places.map((data) => (
                     
                     <Text key={data.id}>
-
-                        <Text style={styles.names}>{data.name} {"\n"}</Text>
-                        <Image source ={data.image} style={styles.placeLogo} />
-                        <Text style={styles.locations}>{"\n"}{data.location}{"\n"}</Text>
-                        <Text style={styles.phones}>{data.phone}{"\n"}</Text>
-                        <Text style={styles.abouts}>{data.about}{"\n"}</Text>
-
+                            
+                            <Text style={styles.names}>{data.name} {"\n"}</Text>
+                            <Image source ={data.image} style={styles.placeLogo} />
+                            <Text style={styles.locations}>{"\n"}{data.location}{"\n"}</Text>
+                            <Text style={styles.phones}>{data.phone}{"\n"}</Text>
+                            <Text style={styles.abouts}>{data.about}{"\n"}</Text>
+                        
                     </Text>
                 ))}
 
@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#EBF5E8',
         borderWidth: 2,
-        borderColor: '#6C796A',
+        borderTopColor: '#6C796A',
+        borderBottomColor: '#6C796A',
         
     },
 
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
     },
 
     locations:{
-        
+      
         textAlign: "left",
         color:'#758473',
         fontSize: 12,

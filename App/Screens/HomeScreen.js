@@ -38,7 +38,10 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: "flex-start",
-        backgroundColor: '#EBF5E8'
+        backgroundColor: '#EBF5E8',
+        borderTopColor: '#6C796A',
+        borderBottomColor: '#6C796A',
+        
     },
     titleArea: {
         alignItems: "center",
@@ -67,7 +70,7 @@ const styles = StyleSheet.create({
         width: '80%',
         alignItems: "flex-start",
         alignContent: 'space-between',
-        backgroundColor: "green",
+        backgroundColor: "#637461",
     },
     bottomWordsArea: {
         
