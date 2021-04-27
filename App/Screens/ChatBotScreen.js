@@ -20,8 +20,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#EBF5E8',
-        borderTopColor: '#6C796A',
-        borderBottomColor: '#6C796A',
+        borderTopWidth: 2,
+        borderBottomWidth: 2,
+        borderColor: '#6C796A', 
 
     }
 });
