@@ -34,7 +34,7 @@ function HelpScrn() {
 function Home(){
   return(
     <Tab.Navigator 
-      initialRouteName="HomeScrn"
+      initialRouteName="Home"
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
