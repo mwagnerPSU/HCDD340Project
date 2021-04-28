@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
     caddyBottomWords: {
         fontSize: 17,
         fontWeight: '400',
-        paddingTop: 5,
         paddingLeft: 5,
     },
     caddyArea: {
