@@ -20,18 +20,15 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
-        // paddingLeft: 20,
-        
+        justifyContent: 'center',        
     },
     logo:{
-        width: '50%',
-        height: '120%',
+        width: '117%',
+        height: '117%',
         resizeMode: 'contain',
-        marginBottom: 5,
+        marginBottom: 3,
     },
     title:{
         marginTop: '5%',
     }
-
 });
