@@ -78,14 +78,14 @@ const styles = StyleSheet.create({
     },
     caddyTopWords: {
         fontSize: 17,
-        fontWeight: '300',
+        fontWeight: '400',
         paddingTop: 5,
         paddingBottom: 20,
         paddingLeft: 5,
     },
     caddyBottomWords: {
         fontSize: 17,
-        fontWeight: '300',
+        fontWeight: '400',
         paddingTop: 5,
         paddingLeft: 5,
     },
