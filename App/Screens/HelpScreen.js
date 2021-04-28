@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, Image, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
 import Navigator from '../Navigation/Navigator';
 
@@ -30,25 +30,26 @@ export default function App() {
     ];
     return (
         <SafeAreaView style={styles.container}>
-
-            <View style={styles.header}>
-                <Text style={{ fontSize: 30, color: '#6C796A'}}>Find More Help:</Text>
-            </View>
-            <View style ={styles.borders}>
-                {places.map((data) => (
-                    
-                    <Text key={data.id}>
-                            
-                            <Text style={styles.names}>{data.name} {"\n"}</Text>
-                            <Image source ={data.image} style={styles.placeLogo} />
-                            <Text style={styles.locations}>{"\n"}{data.location}{"\n"}</Text>
-                            <Text style={styles.phones}>{data.phone}{"\n"}</Text>
-                            <Text style={styles.abouts}>{data.about}{"\n"}</Text>
+            <ScrollView style={styles.scrollView}>
+                <View style={styles.header}>
+                    <Text style={{ fontSize: 30, color: '#6C796A'}}>Find More Help:</Text>
+                </View>
+                <View style ={styles.borders}>
+                    {places.map((data) => (
                         
-                    </Text>
-                ))}
+                        <Text key={data.id}>
+                                
+                                <Text style={styles.names}>{data.name} {"\n"}</Text>
+                                <Image source ={data.image} style={styles.placeLogo} />
+                                <Text style={styles.locations}>{"\n"}{data.location}{"\n"}</Text>
+                                <Text style={styles.phones}>{data.phone}{"\n"}</Text>
+                                <Text style={styles.abouts}>{data.about}{"\n"}</Text>
+                            
+                        </Text>
+                    ))}
 
-            </View>
+                </View>
+            </ScrollView>
         </SafeAreaView>
     );
 }
@@ -59,9 +60,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#EBF5E8',
         borderTopWidth: 2,
         borderBottomWidth: 2,
-        borderColor: '#6C796A',
-        
-        
+        borderColor: '#6C796A', 
     },
 
     borders: {
