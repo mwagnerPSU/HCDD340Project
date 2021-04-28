@@ -7,10 +7,11 @@ export default function App() {
     
     const [firstResp, setFirstResp] = useState("");
     const [secondResp, setSecondResp] = useState("");
-    //const [thirdResp, setThirdResp] = useState("");
+    const [thirdResp, setThirdResp] = useState("");
     const [showFirstDialogue, setShowFirstDialogue] = useState("");
     const [showSecondButtons, setShowSecondButtons] = useState("");
     const [showSecondDialogue, setShowSecondDialogue] = useState("");
+    const [showThirdDialogue, setShowThirdDialogue] = useState("");
 
     function choice1answer1() {
         if(showFirstDialogue === ""){
@@ -20,7 +21,11 @@ export default function App() {
         if(showSecondDialogue === true){
             setShowSecondDialogue(!showSecondDialogue);
         }
+        if(showThirdDialogue === true){
+            setShowThirdDialogue(!showThirdDialogue);
+        }
         setSecondResp("");
+        setThirdResp("");
         setFirstResp("SUD stands for substance use disorder and it's a condition in which there is uncontrolled use of a substance despite harmful consequence");
     }
     
@@ -32,7 +37,11 @@ export default function App() {
         if(showSecondDialogue === true){
             setShowSecondDialogue(!showSecondDialogue);
         }
+        if(showThirdDialogue === true){
+            setShowThirdDialogue(!showThirdDialogue);
+        }
         setSecondResp("");
+        setThirdResp("");
         setFirstResp("SUDs symptoms are grouped into four categories:\n1. Impaired control\n2. Social problems\n3. Risky use\n4. Drug effect");
     }
     
@@ -44,7 +53,11 @@ export default function App() {
         if(showSecondDialogue === true){
             setShowSecondDialogue(!showSecondDialogue);
         }
+        if(showThirdDialogue === true){
+            setShowThirdDialogue(!showThirdDialogue);
+        }
         setSecondResp("");
+        setThirdResp("");
         setFirstResp("Reach out to a medical professional should conduct a formal assessment of symptoms to identify is a SUD is present");
     }
 
@@ -53,11 +66,17 @@ export default function App() {
             if(showSecondDialogue === false || showSecondDialogue === ""){
                 setShowSecondDialogue(!showSecondDialogue);
             }
+            if(showThirdDialogue === true){
+                setShowThirdDialogue(!showThirdDialogue);
+            }
             setSecondResp("Changes in the brain's structure and function are what cause people to have these intense cravings, sever SUDs are sometimes called addictions");
         }
         else if (firstResp === "SUDs symptoms are grouped into four categories:\n1. Impaired control\n2. Social problems\n3. Risky use\n4. Drug effect"){
             if(showSecondDialogue === false || showSecondDialogue === ""){
                 setShowSecondDialogue(!showSecondDialogue);
+            }
+            if(showThirdDialogue === true){
+                setShowThirdDialogue(!showThirdDialogue);
             }
             setSecondResp("Along with these the addiction may cause physical and psychological problems as well and relationship problems with family or friends");
         }
@@ -65,15 +84,18 @@ export default function App() {
             if(showSecondDialogue === false || showSecondDialogue === ""){
                 setShowSecondDialogue(!showSecondDialogue);
             }
+            if(showThirdDialogue === true){
+                setShowThirdDialogue(!showThirdDialogue);
+            }
             setSecondResp("There are many different treatments for SUD depending on the person and SUD, these could include hospitalization, therapeutic communities, residential treatments and others");
         }
     }
 
     function choice2answer2() {
-        if(showSecondDialogue === false || showSecondDialogue === ""){
-            setShowSecondDialogue(!showSecondDialogue);
+        if(showThirdDialogue === false || showThirdDialogue === ""){
+            setShowThirdDialogue(!showThirdDialogue);
         }
-        setSecondResp("Have a nice day!");
+        setThirdResp("Have a nice day!");
     }
 
     return (
@@ -135,6 +157,11 @@ export default function App() {
                     { showSecondDialogue ? 
                     <View style={styles.chatBubble}>
                         <Text>{secondResp}</Text>
+                    </View>
+                    : null }
+                    { showThirdDialogue ? 
+                    <View style={styles.chatBubble}>
+                        <Text>{thirdResp}</Text>
                     </View>
                     : null }
                 </ScrollView>
