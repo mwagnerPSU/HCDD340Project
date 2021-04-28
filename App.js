@@ -91,7 +91,7 @@ function App() {
           title: <Logo />,
           headerStyle: {
             backgroundColor: 'white',
-          }
+          },
         }}
       >
         <Stack.Screen 
